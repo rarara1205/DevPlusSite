@@ -1,5 +1,19 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Nunito', sans-serif;
+  color: #111111;
+  margin: 0 0 26px;
+  line-height: 1.2;
+}
+
 body{
   margin: 0;
+  font-size: 15px;
+  color: #505050;
+  font-family: 'Rubik', sans-serif;
+  vertical-align: baseline;
+  line-height: 26px;
+  font-weight: 400;
+  overflow-x: hidden;
 }
 
 header{
@@ -40,7 +54,7 @@ header{
   list-style: none;
   top: 100%;
   padding-left: 0%;
-  /* background-color: aliceblue; */
+  background-color: white;
 }
 
 .parent:hover .sub-menu-group{
@@ -50,4 +64,50 @@ header{
 .img-logo{
   /* background-color: aquamarine; */
   width: 10%;
+}
+
+.container{
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+}
+
+#banner{
+  background: url(Devplus_missions.png);
+  background-size: cover;
+  background-position: center;
+  padding: 125px 0px 425px;
+}
+
+.banner-content{
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.banner-title{
+  font-size: 55px;
+  margin-bottom: 16px;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.desc{
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 35px;
+}
+
+.btn{
+  border: 1px solid #ff5421;
+  color: #ffffff;
+  background: #ff5421;
+  padding: 16px 58px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
 }
