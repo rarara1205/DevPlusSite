@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Nunito', sans-serif;
   color: #111111;
@@ -15,6 +19,8 @@ body{
   font-weight: 400;
   overflow-x: hidden;
 }
+
+/* header */
 
 header{
   position: sticky;
@@ -66,6 +72,8 @@ header{
   width: 10%;
 }
 
+/* banner */
+
 .container{
   padding-left: 15px;
   padding-right: 15px;
@@ -110,4 +118,115 @@ header{
   font-size: 16px;
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
+}
+
+/* about */
+
+#about{
+  padding-bottom: 100px;
+}
+
+.row{
+  margin-left: -15px;
+  margin-right: -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-about, .col-roadmap{
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 auto;
+}
+
+.col-about{
+  padding-right: 50px;
+  width: 66.7%;
+}
+
+.about-part{
+  background: #e7f4f6;
+  padding: 60px 60px 70px;
+  border-radius: 5px;
+  margin-top: -60px;
+}
+
+.title-sec{
+  margin-bottom: 40px;
+}
+
+.sub-title{
+  color: #226FB7;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.title{
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.title-sec .desc{
+  margin: 0;
+  font-size: 18px;
+}
+
+.col-roadmap{
+  width: 33.3%;
+}
+
+.roadmap-part{
+  margin-top: -60px;
+}
+
+.roadmap-title{
+  background: #226FB7;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 18px 25px;
+  text-align: center;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.roadmap-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.roadmap-item{
+  position: relative;
+  background: #e7f4f6;
+  margin-bottom: 12px;
+  border-radius: 3px;
+  padding: 20px;
+  padding-left: 0 !important;
+  overflow: hidden;
+}
+
+.roadmap-item span{
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #226FB7;
+  border-right: 1px solid #226FB7;
+  padding-right: 10px;
+  font-weight: 600;
+  width: 60px;
+  font-size: 22px;
+  font-family: 'Nunito', sans-serif;
+  display: block;
+}
+
+.roadmap-item div{
+  padding-left: 95px;
+  font-weight: 500;
 }
