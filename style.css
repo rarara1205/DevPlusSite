@@ -9,6 +9,32 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
 }
 
+h2{
+  font-size: 36px;
+  font-weight: 700;
+}
+
+h3{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+a{
+  text-decoration: none;
+}
+
+p{
+  margin: 0;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  line-height: 70px;
+  text-align: center;
+}
+
 body{
   margin: 0;
   font-size: 15px;
@@ -165,11 +191,6 @@ header{
   margin-bottom: 8px;
 }
 
-.title{
-  font-size: 36px;
-  font-weight: 700;
-}
-
 .title-sec .desc{
   margin: 0;
   font-size: 18px;
@@ -229,4 +250,71 @@ header{
 .roadmap-item div{
   padding-left: 95px;
   font-weight: 500;
+}
+
+/* skills */
+
+#skills{
+  background: #f3f8f9;
+  padding-top: 94px;
+  padding-bottom: 70px;
+}
+
+.skill-title-sec{
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.skill-title-sec div{
+  flex: 0 0 auto;
+  width: 100%;
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.skill-title{
+  margin-bottom: 0;
+}
+
+.skill-col{
+  margin-bottom: 30px;
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 auto;
+  width: 33.3%;
+}
+
+.skill-item{
+  padding: 25px 20px;
+  border: 1px solid #dfe9eb;
+  background: #ffffff;
+  overflow: hidden;
+  display: block;
+  color: #505050;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.icon-part{
+  float: left;
+  margin-right: 25px;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 100%;
+  background: rgba(22, 170, 202, 0.2);
+  text-align: center;
+}
+
+.content-part{
+  color: #505050;
+}
+
+.content-title{
+  color: #111111;
+  margin-bottom: 5px;
+  font-size: 22px;
 }
