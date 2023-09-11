@@ -504,3 +504,113 @@ header{
   font-size: 30px;
   line-height: 70px;
 }
+
+/* review */
+
+#review{
+  padding: 100px 0;
+}
+
+.review-title{
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.carousel{
+  width: 100%;
+  position: relative;
+  display: block;
+}
+
+.owl-stage-outer{
+  position: relative;
+  padding: 10px;
+  margin: -10px;
+}
+
+.owl-stage{
+  position: relative;
+  width: 4095px;
+}
+
+.owl-item{
+  position: relative;
+  float: left;
+  width: 555px;
+  margin-right: 30px;
+}
+
+.auther-desc{
+  min-height: 440px;
+  padding: 70px 15px;
+  background-color: #f3f8f9;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.auther-desc .desc{
+  text-align: center;
+  position: relative;
+  color: #505050;
+  padding: 80px 40px 30px;
+  font-size: 23px;
+  line-height: 33px;
+  font-weight: 500;
+  font-style: italic;
+  margin: 0;
+}
+
+.quote{
+  width: 66px;
+  top: -13px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.auther-img{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 80px;
+}
+
+.auther-img img{
+  width: auto;
+  border-radius: 50%;
+}
+
+.auther-info{
+  text-align: center;
+  padding-top: 45px;
+}
+
+.auther-info .name{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 45px;
+  color: #226FB7;
+  display: block;
+}
+
+.designation{
+  font-size: 16px;
+  color: #111111;
+}
+
+.owl-dots{
+  text-align: center;
+  margin: 47px auto 0;
+  line-height: 15px;
+  display: block;
+}
+
+.owl-dot{
+  width: 40px;
+  height: 10px;
+  display: inline-block;
+  margin: 0 6px;
+  padding: 3px 0;
+  border-radius: 30px;
+  background: #226FB7;
+  border: none;
+}
