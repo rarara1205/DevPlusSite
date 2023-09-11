@@ -105,7 +105,7 @@ header{
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 960px;
+  max-width: 1170px;
 }
 
 #banner{
@@ -398,4 +398,109 @@ header{
 .admission-btn .btn{
   background-color: #226FB7;
   border-color: #226FB7;
+}
+
+/* qa */
+
+#qa{
+  padding: 100px 0;
+}
+
+.qa-col{
+  position: relative;
+  flex: 0 0 auto;
+  padding: 0;
+  width: 50%;
+}
+
+.qa-col .main-part{
+  padding: 60px 60px 70px;
+  background-color: #f9f8f8;
+}
+
+.qa-title{
+  margin-bottom: 40px;
+}
+
+.qa-content{
+  border-width: 12px;
+}
+
+.accordion-item{
+  margin-bottom: 25px;
+  border: none;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  border-radius: 0.25rem;
+}
+
+.accordion-header{
+  display: flex;
+  align-items: center;
+  padding: 0;
+  border: none;
+  margin-bottom: 0;
+}
+
+.accordion-btn{
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0 60px;
+  height: 65px;
+  line-height: 65px;
+  font-size: 16px;
+  font-weight: 600;
+  background: #226FB7;
+  box-shadow: 0 0 49px 0 rgba(0, 0, 0, 0.08);
+  color: #ffffff;
+  border-width: 0;
+}
+
+.accordion-body{
+  background: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #505050;
+  padding: 15px 14px 15px;
+  width: 100%;
+}
+
+.qa-col .img-part{
+  background: url(https://devplus.edu.vn/assets/images/devplus/video_03.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  min-height: 615px;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.popup-video{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  background: #226FB7;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  text-align: center;
+}
+
+.popup-video i{
+  margin-left: 5px;
+}
+
+.popup-video i:before{
+  font-size: 30px;
+  line-height: 70px;
 }
