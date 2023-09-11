@@ -144,6 +144,7 @@ header{
   font-size: 16px;
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
+  display: inline-block;
 }
 
 /* about */
@@ -343,7 +344,7 @@ header{
   border-radius: 5px;
 }
 
-.img-part{
+.campus-content .img-part{
   margin-bottom: 30px; 
 }
 
@@ -354,4 +355,47 @@ header{
 
 .content-part h3{
   font-size: 24px;
+}
+
+/* admission */
+
+#admission{
+  position: relative;
+  background-color: #f3f8f9;
+}
+
+#admission .row{
+  align-items: center;
+}
+
+.admission-col{
+  position: relative;
+  padding: 0 15px;
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.admission-col .img-part img{
+  border-radius: 0;
+}
+
+.admission-content{
+  max-width: 700px;
+  padding-left: 90px;
+  padding-right: 15px;
+}
+
+.admission-title-sec{
+  margin-bottom: 40px;
+}
+
+.admission-title-sec .desc{
+  font-size: 15px;
+  margin: 0;
+  line-height: 26px;
+}
+
+.admission-btn .btn{
+  background-color: #226FB7;
+  border-color: #226FB7;
 }
