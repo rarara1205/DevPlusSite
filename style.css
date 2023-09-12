@@ -55,6 +55,10 @@ body{
   overflow-x: hidden;
 }
 
+.hide{
+  display: none;
+}
+
 /* header */
 
 header{
@@ -74,7 +78,7 @@ header{
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1170px;
+  max-width: 1270px;
 }
 
 header .container .row{
@@ -228,6 +232,7 @@ header .logo-part img{
   font-size: 30px;
   line-height: 120px;
   color: #111111;
+  transition: all 0.3s ease;
 }
 
 .side-menu-icon:hover{
@@ -274,6 +279,12 @@ header .logo-part img{
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
   display: inline-block;
+  transition: 0.3s;
+}
+
+.btn:hover{
+  border-color: #FF914D;
+  background: #FF914D;
 }
 
 /* about */
@@ -379,7 +390,7 @@ header .logo-part img{
 
 .roadmap-item div{
   padding-left: 95px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /* skills */
@@ -417,7 +428,7 @@ header .logo-part img{
 }
 
 .skill-item{
-  padding: 25px 20px;
+  padding: 30px;
   border: 1px solid #dfe9eb;
   background: #ffffff;
   overflow: hidden;
@@ -426,6 +437,10 @@ header .logo-part img{
   border-radius: 5px;
   display: flex;
   align-items: center;
+}
+
+.skill-item, .icon-part, .icon-part img, .content-part, .content-title{
+  transition: all 0.3s ease;
 }
 
 .icon-part{
@@ -439,15 +454,6 @@ header .logo-part img{
   text-align: center;
 }
 
-.skill-item:hover .icon-part img{
-  transform: scale(0.9);
-}
-
-.skill-item:hover .icon-part{
-  background-color: white;
-}
-
-
 .content-part{
   color: #505050;
 }
@@ -456,6 +462,26 @@ header .logo-part img{
   color: #111111;
   margin-bottom: 5px;
   font-size: 22px;
+}
+
+.skill-item:hover{
+  background-color: #226FB7;
+}
+
+.skill-item:hover .icon-part img{
+  transform: scale(0.9);
+}
+
+.skill-item:hover .icon-part{
+  background-color: white;
+}
+
+.skill-item:hover .content-part{
+  color: #fff;
+}
+
+.skill-item:hover .content-title{
+  color: #fff;
 }
 
 /* campus */
@@ -491,7 +517,7 @@ header .logo-part img{
   border-radius: 5px;
 }
 
-.content-part h3{
+.campus-content .content-part h3{
   font-size: 24px;
 }
 
@@ -536,6 +562,11 @@ header .logo-part img{
 .admission-btn .btn{
   background-color: #226FB7;
   border-color: #226FB7;
+}
+
+.admission-btn .btn:hover{
+  background-color: #1E95BA;
+  border-color: #1E95BA;
 }
 
 /* qa */
@@ -593,13 +624,29 @@ header .logo-part img{
   line-height: 65px;
   font-size: 16px;
   font-weight: 600;
-  background: #226FB7;
+  background: #FFFFFF;
+  /* background: #226FB7; */
   box-shadow: 0 0 49px 0 rgba(0, 0, 0, 0.08);
-  color: #ffffff;
+  /* color: #ffffff; */
+  color: #111111;
   border-width: 0;
+  text-align: left;
+}
+
+.accordion-btn i{
+  position: absolute;
+  left: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  font-weight: 400;
+  background: unset;
+  height: unset;
+  width: unset;
 }
 
 .accordion-body{
+  display: none;
   background: #ffffff;
   font-size: 15px;
   font-weight: 400;
@@ -635,12 +682,47 @@ header .logo-part img{
 }
 
 .popup-video i{
+  color: #fff;
   margin-left: 5px;
 }
 
 .popup-video i:before{
   font-size: 30px;
   line-height: 70px;
+}
+
+.popup-video .hover {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  animation: pulse-border 1500ms ease-out infinite;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.popup-video:hover .hover{
+  opacity: 1;
+}
+
+@keyframes pulse-border{
+  from{
+    background-color: rgba(34, 111, 183, 1);
+    width: 120px;
+    height: 120px;
+  }
+
+  to{
+    background-color: rgba(34, 111, 183, 0);
+    width: 180px;
+    height: 180px;
+  }
 }
 
 /* review */
@@ -668,13 +750,22 @@ header .logo-part img{
 
 .owl-stage{
   position: relative;
-  width: 4095px;
+  width: 4445px;
+}
+
+.owl-stage:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .owl-item{
   position: relative;
   float: left;
-  width: 555px;
+  width: 605px;
   margin-right: 30px;
 }
 
@@ -692,7 +783,7 @@ header .logo-part img{
   padding: 80px 40px 30px;
   font-size: 23px;
   line-height: 33px;
-  font-weight: 500;
+  font-weight: 600;
   font-style: italic;
   margin: 0;
 }
