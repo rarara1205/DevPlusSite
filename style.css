@@ -22,6 +22,7 @@ h3{
 a{
   text-decoration: none;
   outline: none;
+  cursor: pointer;
 }
 
 a, a:visited{
@@ -237,6 +238,7 @@ header .logo-part img{
   line-height: 120px;
   color: #111111;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .side-menu-icon:hover{
@@ -255,6 +257,8 @@ header .logo-part img{
   right: 0;
   background-color: #FAFAFA;
   overflow: auto;
+  transform: translateX(100%);
+  transition: all 0.3s ease;
 }
 
 .close-btn-part{
@@ -267,6 +271,7 @@ header .logo-part img{
   background-color: #226FB7;
   border-radius: 100%;
   position: relative;
+  cursor: pointer;
 }
 
 .cross-mark{
