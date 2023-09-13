@@ -64,7 +64,7 @@ body{
 
 header{
   position: sticky;
-  z-index: 999;
+  z-index: 200;
   top: 0;
   width: 100%;
   background-color:white;
@@ -249,7 +249,7 @@ header .logo-part img{
   display: block;
   position: fixed;
   height: 100%;
-  z-index: 1000;
+  z-index: 10000;
   width: 500px;
   padding: 30px 50px;
   text-align: center;
@@ -325,6 +325,7 @@ header .logo-part img{
 .gallery-img div{
   display: block;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .gallery-img img{
@@ -1086,4 +1087,180 @@ footer{
   background: #226FB7;
   color: #ffffff;
   text-align: center;
+}
+
+/* modal */
+.modal{
+  position: fixed;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  outline: none;
+  opacity: 0;
+  z-index: 300;
+  transition: 0.2s;
+  background-color: rgba(0, 0, 0, 0.7);
+  pointer-events: none;
+}
+
+.modal-active{
+  opacity: 1;
+  pointer-events: visible;
+}
+
+.modal-container{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 8px;
+}
+
+.modal-content{
+  max-width: 100%;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.modal-close-btn{
+  display: block;
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: right;
+  opacity: 0.65;
+  font-size: 28px;
+  padding: 0 40px;
+  border: 0;
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+}
+
+.modal-close-btn:hover{
+  opacity: 1;
+}
+
+.modal-fig figure{
+  margin: 0;
+}
+
+.modal-img{
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 923px;
+  display: block;
+  padding: 40px;
+}
+
+.modal-bottom{
+  margin-top: -36px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 0 40px;
+  height: 18px;
+  text-align: right;
+}
+
+.modal-counter{
+  color: #ccc;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.modal-btn{
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 90px;
+  height: 110px;
+  padding: 0;
+  border: 0;
+  outline: none;
+  margin-top: -55px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.modal-btn.prev{
+  left: 0;
+}
+
+.modal-btn.next{
+  right: 0;
+}
+
+.modal-btn:before,
+.modal-btn:after
+{
+  position: absolute;
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  margin-top: 35px;
+  margin-left: 35px;
+  border: medium inset;
+  left: 0;
+  top: 0;
+  border-color: transparent;
+  opacity: 0.65;
+}
+
+.modal-btn:before{
+  border-top-width: 21px;
+  border-bottom-width: 21px;
+  opacity: 0.7;
+}
+
+.modal-btn:after{
+  border-top-width: 13px;
+  border-bottom-width: 13px;
+  top: 8px;
+}
+
+.modal-btn.prev:before{
+  margin-left: 25px;
+  border-right: 27px solid #3f3f3f;
+}
+
+.modal-btn.prev::after{
+  margin-left: 31px;
+  border-right: 17px solid #fff;
+}
+
+.modal-btn.next:before{
+  border-left: 27px solid #3f3f3f;
+}
+
+.modal-btn.next:after{
+  margin-left: 39px;
+  border-left: 17px solid #fff;
+}
+
+.modal-btn:hover .modal-btn:before{
+  opacity: 1;
+}
+
+.modal-btn:hover .modal-btn:after{
+  opacity: 1;
+}
+
+.modal-btn:hover::before{
+  opacity: 0.9;
+}
+
+.modal-btn:hover::after{
+  opacity: 1;
 }

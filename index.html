@@ -9,6 +9,27 @@
   <script src="https://kit.fontawesome.com/7b5dc53f7f.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <div class="modal" id="modal">
+    <div class="modal-container">
+      <div class="modal-content">
+        <div class="modal-fig">
+          <button class="modal-close-btn" onclick="closeModal()">
+            ×
+          </button>
+          <div>
+            <img id="modal-img" class="modal-img" src="https://devplus.edu.vn/assets/images/devplus/1.png">
+            <div class="modal-bottom">
+              <div class="modal-counter">
+                1 of 6
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="modal-btn prev" onclick="showPreviousImg()"></button>
+      <button class="modal-btn next" onclick="showNextImg()"></button>
+    </div>
+  </div>
   <header id="header">
     <div class="container">
       <div class="row">
@@ -49,6 +70,7 @@
         </div>
       </div>
     </div>
+  </header>
     <div class="side-menu" id="right-side-menu">
       <div class="close-btn-part">
         <div class="close-btn" onclick="closeSideMenu()">
@@ -67,32 +89,32 @@
       </div>
       <div class="gallery-part">
         <div class="gallery-img">
-          <div>
+          <div id="open-modal-1" onclick="openModal(1)">
             <img src="https://devplus.edu.vn/assets/images/devplus/1.png">
           </div>
         </div>
         <div class="gallery-img">
-          <div>
+          <div id="open-modal-2" onclick="openModal(2)">
             <img src="https://devplus.edu.vn/assets/images/devplus/2.png">
           </div>
         </div>
         <div class="gallery-img">
-          <div>
+          <div id="open-modal-3" onclick="openModal(3)">
             <img src="https://devplus.edu.vn/assets/images/devplus/3.png">
           </div>
         </div>
         <div class="gallery-img">
-          <div>
+          <div id="open-modal-4" onclick="openModal(4)">
             <img src="https://devplus.edu.vn/assets/images/devplus/4.png">
           </div>
         </div>
         <div class="gallery-img">
-          <div>
+          <div id="open-modal-5" onclick="openModal(5)">
             <img src="https://devplus.edu.vn/assets/images/devplus/5.png">
           </div>
         </div>
         <div class="gallery-img">
-          <div>
+          <div id="open-modal-6" onclick="openModal(6)">
             <img src="https://devplus.edu.vn/assets/images/devplus/6.png">
           </div>
         </div>
@@ -106,7 +128,7 @@
         </a>
       </div>
     </div>
-  </header>
+  <!-- </header> -->
 
   <main id="main-content">
     <section id="banner">
