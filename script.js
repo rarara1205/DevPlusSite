@@ -54,7 +54,6 @@ for(i=0;i<btns.length;i++){
 }
 
 function showAnswer(e){
-  const qa = document.getElementById("qa-1");
   if(currentAnsNum == undefined){
     console.log("first");
     currentAnsNum = e.target.value-1;
@@ -77,6 +76,7 @@ function showAnswer(e){
     bodys[currentAnsNum].classList.toggle("active");
     bodys[currentAnsNum].style.setProperty("--max-height", `${bodys[currentAnsNum].firstElementChild.getBoundingClientRect().height}px`);
   }
+  btns[currentAnsNum].firstElementChild.classList.toggle("fa-bell-slash");
 }
 
 function scrollUp(){
