@@ -52,6 +52,7 @@ function showAnswer(e){
   else if(currentAnsNum != e.target.value-1){
     console.log("change");
     btns[currentAnsNum].classList.remove("active");
+    bodys[currentAnsNum].classList.remove("active");
     currentAnsNum = e.target.value-1;
     btns[currentAnsNum].classList.add("active");
     bodys[currentAnsNum].classList.add("active");
