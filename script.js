@@ -7,10 +7,19 @@ function closeSideMenu(){
 }
 
 const modalImg = document.getElementById("modal-img");
+const modalFig = document.getElementById("modal-fig");
+
+function modalAnim(){
+  modalFig.classList.add("animate");
+  modalFig.addEventListener("animationend", ()=>{
+    modalFig.classList.remove("animate");
+  })
+}
 
 function openModal(num){
   modalImg.src = "https://devplus.edu.vn/assets/images/devplus/"+num+".png";
   document.getElementById("modal").classList.add("modal-active");
+  modalAnim();
 }
 
 function closeModal(){
@@ -18,17 +27,21 @@ function closeModal(){
 }
 
 function showPreviousImg(){
+  modalFig.className = "";
   const src = modalImg.src;
   const currentNum = parseInt(src.charAt(src.length - 5));
   const nextNum = currentNum != 1 ? currentNum - 1 : 6;
   modalImg.src = "https://devplus.edu.vn/assets/images/devplus/"+nextNum+".png";
+  modalAnim();
 }
 
 function showNextImg(){
+  modalFig.className = "";
   const src = modalImg.src;
   const currentNum = parseInt(src.charAt(src.length - 5));
   const nextNum = currentNum != 6 ? currentNum + 1 : 1;
   modalImg.src = "https://devplus.edu.vn/assets/images/devplus/"+nextNum+".png";
+  modalAnim();
 }
 
 let currentAnsNum = undefined;
