@@ -65,3 +65,7 @@ function showAnswer(e){
     bodys[currentAnsNum].style.setProperty("--max-height", `${bodys[currentAnsNum].firstElementChild.getBoundingClientRect().height}px`);
   }
 }
+
+function scrollUp(){
+  window.scroll({top: 0, behavior: 'smooth'});
+}
